@@ -4,7 +4,7 @@ from datetime import datetime
 from unittest.mock import patch
 from zoneinfo import ZoneInfo
 
-import server
+from reader import server
 
 
 IST = ZoneInfo("Asia/Kolkata")
@@ -51,7 +51,8 @@ class FeaturedPickTests(unittest.TestCase):
     def test_repeated_start_queues_only_one_generation(self):
         now = datetime(2026, 10, 9, 12, tzinfo=IST)
         with patch.object(server, "read_lessons", return_value=[]), \
-             patch.object(server.threading, "Thread") as thread_class:
+             patch.object(server.threading, "Thread") as thread_class, \
+             patch.object(server, "log_debug"):
             server.start_featured_pick(now)
             server.start_featured_pick(now)
         self.assertEqual(thread_class.call_count, 1)

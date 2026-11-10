@@ -32,3 +32,8 @@
 {"time": "2026-11-10T08:54:48.448791+00:00", "event": "started", "operation": "story", "timeout_seconds": 600, "web_search": true, "cli": "codex", "provider": "codex"}
 {"time": "2026-11-10T08:56:37.625277+00:00", "event": "pick_started", "pick_type": "weekly", "pick_period": "weekly:2026-W41"}
 {"time": "2026-11-10T08:57:56.160614+00:00", "event": "succeeded", "operation": "story", "provider": "codex", "duration_seconds": 187.7, "result_chars": 22621}
+{"time": "2026-11-10T09:09:19.529736+00:00", "event": "pick_reused", "pick_type": "daily", "pick_period": "daily:2026-11-10"}
+{"time": "2026-11-10T09:12:40.930888+00:00", "event": "pick_reused", "pick_type": "daily", "pick_period": "daily:2026-11-10"}
+{"time": "2026-11-10T09:12:56.438335+00:00", "event": "pick_reused", "pick_type": "daily", "pick_period": "daily:2026-11-10"}
+{"time": "2026-11-10T09:35:31.121546+00:00", "event": "pick_reused", "pick_type": "daily", "pick_period": "daily:2026-11-10"}
+{"time": "2026-11-10T09:35:31.820252+00:00", "event": "pick_reused", "pick_type": "daily", "pick_period": "daily:2026-11-10"}

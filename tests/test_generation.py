@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-import generation
+from reader import generation
 
 
 class GenerationLogTests(unittest.TestCase):

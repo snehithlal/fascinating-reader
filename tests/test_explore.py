@@ -5,7 +5,7 @@ import threading
 import time
 import unittest
 from pathlib import Path
-from explore import Explorer, validate_step
+from reader.explore import Explorer, validate_step
 
 
 def sample():

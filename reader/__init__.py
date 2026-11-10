@@ -1,0 +1,1 @@
+"""Fascination Reader application package."""

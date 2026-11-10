@@ -10,9 +10,8 @@ from copy import deepcopy
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
-from generation import run_json
-
-ROOT = Path(__file__).resolve().parent
+from .generation import run_json
+from .paths import DATA, STARTERS
 
 
 def valid_source(source):
@@ -56,7 +55,7 @@ def validate_step(data):
 
 
 class Explorer:
-    def __init__(self, root=ROOT, runner=run_json):
+    def __init__(self, root=DATA, runner=run_json):
         self.root, self.runner = Path(root), runner
         self.lock, self.jobs, self.active = threading.RLock(), {}, {}
 
@@ -77,12 +76,12 @@ class Explorer:
                 continue
             extra = None
             if path.get('topic') == 'Solar system' and index < 3:
-                extra = json.loads((ROOT / 'solar-starter-more.json').read_text())[index]
-                extras = json.loads((ROOT / 'solar-starter.json').read_text())[0]['sources']
+                extra = json.loads((STARTERS / 'solar-starter-more.json').read_text())[index]
+                extras = json.loads((STARTERS / 'solar-starter.json').read_text())[0]['sources']
                 sources = step.setdefault('sources', [])
                 sources.extend(source for source in extras if source['url'] not in {item.get('url') for item in sources})
             elif path.get('topic') == 'Photosynthesis' and index == 0:
-                extra = json.loads((ROOT / 'photosynthesis-more.json').read_text())['append']
+                extra = json.loads((STARTERS / 'photosynthesis-more.json').read_text())['append']
             if extra:
                 step['markdown'] += '\n\n' + extra
                 step.update(difficulty='Medium', reading_minutes=5, builtin=True)
@@ -94,7 +93,7 @@ class Explorer:
 
     def save(self, path):
         dest = self.path_file(path['id'])
-        dest.parent.mkdir(exist_ok=True)
+        dest.parent.mkdir(parents=True, exist_ok=True)
         with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=dest.parent, delete=False) as f:
             json.dump(path, f, ensure_ascii=False, indent=2)
             name = f.name
@@ -152,8 +151,8 @@ class Explorer:
             self.save(path)
             # The starter is bundled; these steps never call a model.
             if path['topic'] == 'Solar system' and expected < 3:
-                step = json.loads((ROOT / 'solar-starter.json').read_text())[expected]
-                step['markdown'] += '\n\n' + json.loads((ROOT / 'solar-starter-more.json').read_text())[expected]
+                step = json.loads((STARTERS / 'solar-starter.json').read_text())[expected]
+                step['markdown'] += '\n\n' + json.loads((STARTERS / 'solar-starter-more.json').read_text())[expected]
                 step = validate_step(step)
                 path['steps'].append(dict(step, difficulty='Medium', reading_minutes=5, seconds=0, builtin=True))
                 path['updated_at'] = datetime.now(timezone.utc).isoformat()
