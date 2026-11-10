@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fascination Reader</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="masthead"><a class="brand" href="/">Fascination Reader<span>A little curiosity goes a long way.</span></a><span class="local-label">Your local reading room</span></header>
+  <main>
+    <section class="intro" aria-labelledby="intro-title">
+      <p class="eyebrow">FOLLOW YOUR CURIOSITY</p>
+      <h1 id="intro-title">Five minutes.<br>A different view of the world.</h1>
+      <p class="lead">Pick a category. Discover something surprising. Keep reading.</p>
+      <form id="generate-form">
+        <label for="category">What are you curious about?</label>
+        <div class="choose-row"><select id="category" name="category" disabled><option>Loading categories…</option></select><button id="generate" type="submit" disabled>Research a new lesson <span aria-hidden="true">↗</span></button></div>
+        <p class="hint">Research runs in the background. You can search, browse, and read saved lessons while it works. Fresh research uses your signed-in Codex and its usage allowance.</p>
+      </form>
+      <p id="status" role="status" aria-live="polite">Opening your library…</p>
+    </section>
+    <div class="library-heading"><h2>Your reading trail</h2><span id="lesson-count"></span></div>
+    <nav class="library-nav" aria-label="Library views">
+      <button id="view-all" type="button" aria-pressed="true">All lessons</button>
+      <button id="view-later" type="button" aria-pressed="false">Read later <span id="later-count">0</span></button>
+      <button id="view-ask" type="button" aria-pressed="false">Ask anything</button>
+    </nav>
+    <section id="ask-panel" class="ask-panel" hidden aria-labelledby="ask-title">
+      <h3 id="ask-title">What would you like to learn about?</h3>
+      <p class="ask-note">Ask a question or name any topic. The lesson is temporary until you save it to your library; unsaved results disappear when you refresh.</p>
+      <form id="ask-form">
+        <label for="ask-prompt">Your question or topic</label>
+        <textarea id="ask-prompt" maxlength="500" rows="3" placeholder="Why do cats always seem to land on their feet?" required></textarea>
+        <button id="ask-submit" class="ask-submit" type="submit">Create temporary lesson</button>
+      </form>
+      <p id="ask-status" role="status" aria-live="polite"></p>
+      <div id="ask-preview"></div>
+    </section>
+    <div id="library-content">
+    <div class="library-filters">
+      <div><label for="lesson-search">Search saved lessons</label><input id="lesson-search" type="search" placeholder="Title, topic or a word you remember…" autocomplete="off"></div>
+      <div><label for="library-category">Browse by category</label><select id="library-category"><option value="">All categories</option></select></div>
+    </div>
+    <p id="library-status" role="status" aria-live="polite"></p>
+    <p id="library-empty" class="empty" hidden>No lessons match. Try another search or category.</p>
+    <section id="library" aria-label="Saved lessons"></section>
+    <div class="load-more-wrap"><button id="load-more" class="load-more" type="button" hidden>Load more lessons</button></div>
+    </div>
+  </main>
+  <footer>Every lesson stays in your library. Sources are a click away.</footer>
+  <div id="audio-bar" hidden role="region" aria-label="Read aloud controls">
+    <div class="audio-info"><span class="eyebrow">READING ALOUD</span><span id="audio-title"></span></div>
+    <div class="audio-controls"><label for="rate">Speed</label><select id="rate"><option value="0.85">0.85×</option><option value="1" selected>1×</option><option value="1.15">1.15×</option></select><button id="pause" type="button">Pause</button><button id="stop" type="button">Stop</button></div>
+  </div>
+</body>
+</html>

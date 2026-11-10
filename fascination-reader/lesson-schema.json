@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["title", "category", "markdown", "sources"],
+  "properties": {
+    "title": {"type": "string"},
+    "category": {"type": "string"},
+    "markdown": {"type": "string"},
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "url"],
+        "properties": {"title": {"type": "string"}, "url": {"type": "string"}}
+      }
+    }
+  }
+}

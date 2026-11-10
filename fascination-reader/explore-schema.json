@@ -1,0 +1,107 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "title",
+    "markdown",
+    "takeaway",
+    "next",
+    "summary",
+    "sources",
+    "diagram"
+  ],
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "markdown": {
+      "type": "string",
+      "maxLength": 18000
+    },
+    "takeaway": {
+      "type": "string"
+    },
+    "next": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "title",
+          "url"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "diagram": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "layout",
+        "caption",
+        "nodes"
+      ],
+      "properties": {
+        "layout": {
+          "type": "string",
+          "enum": [
+            "sequence",
+            "compare",
+            "cycle"
+          ]
+        },
+        "caption": {
+          "type": "string"
+        },
+        "nodes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "icon",
+              "label",
+              "detail"
+            ],
+            "properties": {
+              "icon": {
+                "type": "string",
+                "enum": [
+                  "sun",
+                  "planet",
+                  "water",
+                  "leaf",
+                  "brain",
+                  "code",
+                  "atom",
+                  "light",
+                  "cloud",
+                  "box"
+                ]
+              },
+              "label": {
+                "type": "string"
+              },
+              "detail": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

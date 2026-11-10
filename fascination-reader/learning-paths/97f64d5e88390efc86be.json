@@ -1,0 +1,55 @@
+{
+  "id": "97f64d5e88390efc86be",
+  "topic": "Photosynthesis",
+  "steps": [
+    {
+      "title": "How Plants Make Their Food",
+      "markdown": "Imagine a bean plant growing on a sunny windowsill. You give it water, but never feed it bread or fruit. How does it get food? Its leaves use light energy to help make sugar.\n\n**Photosynthesis** is the process by which plants use light energy to make sugars from water and **carbon dioxide**, a gas in the air. These sugars are food: they store energy that the plant can use to stay alive and grow. [Smithsonian Science Education Center](https://ssec.si.edu/node/915)\n\nThe key distinction is between **materials** and **energy**. Water and carbon dioxide supply the materials for making sugar. Sunlight supplies the energy that powers the chemical changes. Light does not become sugar by itself; it enables the plant to rearrange the materials into something new. Oxygen is also produced and released during this process. [Smithsonian Science Education Center](https://ssec.si.edu/node/915)\n\nThink of your windowsill bean plant again. Its roots absorb water, and its leaves take in carbon dioxide from the air. When light reaches the leaves, the plant can use that energy to make sugars. It can use the sugars or store them for later. [Smithsonian Environmental Research Center](https://serc.si.edu/node/39150)\n\nSo watering the plant supplies one essential ingredient. The light and carbon dioxide matter too: together, they allow the plant to manufacture its own food.\n\n## What the leaf actually does\nA leaf is not a little solar panel that simply turns sunlight straight into sugar. Its cells contain tiny structures called **chloroplasts**, where the stages of photosynthesis take place. Inside a chloroplast is **chlorophyll**, a green pigment that absorbs some colours of light more strongly than others. That is why many leaves look green: green light is reflected or passes through more than the red and blue light that chlorophyll absorbs.\n\nCarbon dioxide enters a leaf mostly through tiny openings called **stomata**. Water travels up from the roots. These are the raw materials. Light supplies energy. The plant uses those ingredients through a series of chemical reactions, eventually building sugar and releasing oxygen. Think of the short equation as a shopping list, not a single instant transformation: carbon dioxide + water + light energy → sugar + oxygen.\n\n## Follow one bit of sunlight\nWhen light reaches chlorophyll, its energy excites tiny particles called electrons. The plant uses that energy to power a chain of reactions. It also splits water molecules. The oxygen atoms from that water are joined to make oxygen gas, which can leave the leaf and mix into the air. That oxygen comes from water—not directly from the carbon dioxide.\n\nThe energized steps help produce short-term chemical energy that the plant can use in the next part of the process. In a set of reactions often called the **Calvin cycle**, the plant takes carbon from carbon dioxide and builds sugar molecules. The cycle does not operate like a night-time switch: its reactions are connected to energy and molecules produced by the light-driven stages, and plant cells can regulate them in several ways.\n\nThis two-part sketch is useful, but real photosynthesis includes many molecules and linked reactions. The arrows in the diagram summarize where material and energy enter and what comes out; they do not mean the plant completes everything in one leap.\n\n## Plants use sugar; they do not simply “eat sunlight”\nMaking sugar is not the same as getting unlimited usable energy from sunshine. A plant can use sugar to build new leaves, roots and stems. It can store some as starch for later. It also breaks down sugar through **cellular respiration** to release energy its cells can use—during both day and night. Animals do this too, although plants make many of their own starting sugars through photosynthesis.\n\nThat means a growing plant gets matter from more places than a pot of soil. Carbon in its sugars comes from carbon dioxide in the air. Water comes mostly from the soil. Minerals such as nitrogen and phosphorus also enter through the roots and help build other parts of the plant. Soil matters, but its job is not to supply most of a plant's dry mass as ready-made food.\n\n## Why light and water still matter\nMore light can help photosynthesis speed up, but only up to a point. If light is already plentiful, another factor—such as water, temperature or available carbon dioxide—can become the bottleneck. A bottleneck is the part of a process that limits its overall rate. This is why moving a plant into brighter sunlight does not guarantee it will grow faster forever.\n\nWater shortages also lead a plant to close some of its stomata to reduce water loss. That can keep the plant from drying out quickly, but it also reduces how much carbon dioxide enters. The plant is balancing competing needs, not simply drinking sunlight and turning it into leaves.\n\n### Trace the ingredients\nFollow three inputs through the idea: light brings energy, water supplies hydrogen and the oxygen that can be released, and carbon dioxide supplies carbon for sugar. The simple picture does not show every molecule or reaction. It does show why a green leaf needs light, water and access to air—and why photosynthesis is a chemical construction project that supports much of life on Earth.",
+      "takeaway": "Plants use light energy to make sugar from water and carbon dioxide.",
+      "next": "How chlorophyll captures light energy in a leaf.",
+      "summary": "Introduced photosynthesis as plants making sugar from water and carbon dioxide using light energy. Distinguished material inputs from the energy source, explained that sugar stores usable energy, and identified oxygen as another product. Used a windowsill bean plant as the concrete example.",
+      "sources": [
+        {
+          "title": "What Is Photosynthesis? — Smithsonian Science Education Center",
+          "url": "https://ssec.si.edu/node/915"
+        },
+        {
+          "title": "Photosynthesis, Nutrients, Soil & Basic Plant Information — Smithsonian Environmental Research Center",
+          "url": "https://serc.si.edu/node/39150"
+        }
+      ],
+      "diagram": {
+        "layout": "compare",
+        "caption": "Water and carbon dioxide supply materials; light supplies energy. The diagram summarizes the overall process, leaving out its many chemical steps.",
+        "nodes": [
+          {
+            "icon": "water",
+            "label": "Materials",
+            "detail": "Water + carbon dioxide"
+          },
+          {
+            "icon": "sun",
+            "label": "Energy",
+            "detail": "Light powers the process"
+          },
+          {
+            "icon": "leaf",
+            "label": "Photosynthesis",
+            "detail": "The plant makes sugar"
+          },
+          {
+            "icon": "box",
+            "label": "Products",
+            "detail": "Sugar + oxygen"
+          }
+        ]
+      },
+      "seconds": 38.1,
+      "builtin": true,
+      "difficulty": "Medium",
+      "reading_minutes": 5
+    }
+  ],
+  "updated_at": "2026-10-08T08:43:53.271133+00:00",
+  "difficulty": "Medium"
+}

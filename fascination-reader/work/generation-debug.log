@@ -1,0 +1,34 @@
+{"time": "2026-10-08T13:45:07.123729+00:00", "event": "started", "operation": "explore", "timeout_seconds": 240, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-08T13:45:07.300653+00:00", "event": "cli_failed", "operation": "explore", "duration_seconds": 0.2, "return_code": 1, "result_file_exists": false, "stdout_chars": 0, "stderr": "Output schema file /Users/snps/Documents/workspace/fascination-reader/explore-schema.json is not valid JSON: trailing characters at line 107 column 2\n"}
+{"time": "2026-10-08T13:47:39.978215+00:00", "event": "started", "operation": "explore", "timeout_seconds": 240, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-08T13:49:41.843799+00:00", "event": "succeeded", "operation": "explore", "duration_seconds": 121.9, "result_chars": 9503}
+{"time": "2026-10-08T13:56:25.259174+00:00", "event": "started", "operation": "explore", "timeout_seconds": 240, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-08T13:58:19.547494+00:00", "event": "succeeded", "operation": "explore", "duration_seconds": 114.3, "result_chars": 8651}
+{"time": "2026-10-08T13:59:11.099912+00:00", "event": "started", "operation": "lesson", "timeout_seconds": 360, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-08T14:00:52.303718+00:00", "event": "succeeded", "operation": "lesson", "duration_seconds": 101.2, "result_chars": 7806}
+{"time": "2026-10-08T14:08:24.131279+00:00", "event": "started", "operation": "lesson", "timeout_seconds": 360, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-08T14:10:25.805383+00:00", "event": "succeeded", "operation": "lesson", "duration_seconds": 121.7, "result_chars": 7899}
+{"time": "2026-10-09T06:53:26.000123+00:00", "event": "pick_started", "pick_type": "weekly", "pick_period": "weekly:2026-W41"}
+{"time": "2026-10-09T06:53:26.001653+00:00", "event": "started", "operation": "lesson", "timeout_seconds": 360, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-09T06:55:37.684873+00:00", "event": "succeeded", "operation": "lesson", "duration_seconds": 131.7, "result_chars": 7657}
+{"time": "2026-10-09T06:56:44.654184+00:00", "event": "pick_reused", "pick_type": "weekly", "pick_period": "weekly:2026-W41"}
+{"time": "2026-10-09T10:03:02.221659+00:00", "event": "pick_reused", "pick_type": "weekly", "pick_period": "weekly:2026-W41"}
+{"time": "2026-10-09T10:03:02.831651+00:00", "event": "pick_reused", "pick_type": "weekly", "pick_period": "weekly:2026-W41"}
+{"time": "2026-10-09T10:03:55.546150+00:00", "event": "started", "operation": "explore", "timeout_seconds": 240, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-09T10:04:19.185580+00:00", "event": "pick_reused", "pick_type": "weekly", "pick_period": "weekly:2026-W41"}
+{"time": "2026-10-09T10:05:56.135025+00:00", "event": "succeeded", "operation": "explore", "duration_seconds": 120.6, "result_chars": 9054}
+{"time": "2026-10-09T10:07:44.987640+00:00", "event": "started", "operation": "explore", "timeout_seconds": 240, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-09T10:09:46.486452+00:00", "event": "succeeded", "operation": "explore", "duration_seconds": 121.5, "result_chars": 10050}
+{"time": "2026-10-13T17:47:05.539637+00:00", "event": "pick_started", "pick_type": "daily", "pick_period": "daily:2026-10-13"}
+{"time": "2026-10-13T17:47:05.547119+00:00", "event": "started", "operation": "lesson", "timeout_seconds": 360, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-13T17:48:48.209283+00:00", "event": "succeeded", "operation": "lesson", "duration_seconds": 102.7, "result_chars": 8049}
+{"time": "2026-10-13T17:53:19.151257+00:00", "event": "started", "operation": "lesson", "timeout_seconds": 360, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-13T17:55:05.724357+00:00", "event": "succeeded", "operation": "lesson", "duration_seconds": 106.6, "result_chars": 6984}
+{"time": "2026-10-13T17:56:10.064633+00:00", "event": "started", "operation": "explore", "timeout_seconds": 240, "web_search": true, "cli": "codex", "model": "Codex CLI default"}
+{"time": "2026-10-13T17:58:21.805139+00:00", "event": "succeeded", "operation": "explore", "duration_seconds": 131.7, "result_chars": 8569}
+{"time": "2026-11-10T08:52:49.724900+00:00", "event": "pick_started", "pick_type": "daily", "pick_period": "daily:2026-11-10"}
+{"time": "2026-11-10T08:52:49.728487+00:00", "event": "started", "operation": "lesson", "timeout_seconds": 360, "web_search": true, "cli": "codex", "provider": "codex"}
+{"time": "2026-11-10T08:54:10.610994+00:00", "event": "succeeded", "operation": "lesson", "provider": "codex", "duration_seconds": 80.9, "result_chars": 8076}
+{"time": "2026-11-10T08:54:48.448791+00:00", "event": "started", "operation": "story", "timeout_seconds": 600, "web_search": true, "cli": "codex", "provider": "codex"}
+{"time": "2026-11-10T08:56:37.625277+00:00", "event": "pick_started", "pick_type": "weekly", "pick_period": "weekly:2026-W41"}
+{"time": "2026-11-10T08:57:56.160614+00:00", "event": "succeeded", "operation": "story", "provider": "codex", "duration_seconds": 187.7, "result_chars": 22621}

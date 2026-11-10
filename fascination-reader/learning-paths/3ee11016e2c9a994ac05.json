@@ -1,0 +1,64 @@
+{
+  "id": "3ee11016e2c9a994ac05",
+  "topic": "Solar system",
+  "steps": [
+    {
+      "title": "Meet your cosmic neighbourhood",
+      "markdown": "Imagine leaving your house, then your city, then Earth. Zoom out far enough and our home becomes one small member of a much bigger neighbourhood: the **solar system**.\n\nAt its heart is the **Sun**, a star. Eight planets travel around it: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. Earth is the third planet from the Sun. Planets do not make their own starlight; we see them because they reflect sunlight.\n\n## Read the picture\nThe glowing object on the left is the Sun. Moving right takes you through the planets in order. This is a map of *order*, not distance: real space has enormous gaps, and the planets are not lined up like this.\n\nThe family includes moons, dwarf planets, asteroids and comets too. Our Moon travels around Earth while Earth travels around the Sun. Think of a smaller journey happening inside a larger one.\n\nYou now have the basic map. Next comes the surprising question: why don't these worlds simply drift away?\n\n## The Sun is the family anchor\nOur map begins with the Sun because its gravity holds the solar system together. Gravity is an attraction between objects that have mass. The Sun contains almost all the mass in the solar system, so its pull strongly shapes the journeys of the planets. Each planet also has its own gravity. That is why moons can stay near a planet while the planet travels around the Sun: the Moon is following a smaller path nested inside a much bigger one.\n\nThe Sun is not a lit lamp sitting still in the middle of a diagram. It is a star: a huge, hot ball of plasma. Plasma is matter so hot that many of its particles carry an electric charge. Deep in the Sun, hydrogen nuclei combine into helium. This process, called nuclear fusion, releases energy. Some of that energy eventually escapes as sunlight, which can cross the space between the Sun and Earth in a little over eight minutes.\n\n## “Space” is mostly space\nA drawing places the planets side by side because otherwise you could not see them. It compresses a gigantic amount of distance. If you shrank the Sun to the size of a large ball, Earth would become a tiny bead more than a hundred metres away. Neptune would be several kilometres away on the same scale. The planets in the picture look close because the page is small, not because our neighbourhood is crowded.\n\nTheir sizes need compressing too. The Sun is roughly a hundred times wider than Earth. Jupiter, the largest planet, is still much smaller than the Sun. Even the Sun is only one star among the enormous number in the Milky Way. The solar system is our local address, not the whole galaxy.\n\n## Why is the order so useful?\nThe order tells you more than where a planet sits on a classroom chart. The four inner planets—Mercury, Venus, Earth and Mars—are small rocky worlds. The four farther out—Jupiter, Saturn, Uranus and Neptune—are giant planets. That pattern offers a clue to how this family formed; we will unpack it in another step.\n\nThe map also reminds us that planets are not the entire family. Asteroids are rocky leftovers; comets are icy bodies that can grow glowing tails near the Sun; dwarf planets, including Pluto, orbit the Sun too. Moons orbit planets or other small worlds. Each object follows its own path, so a solar system is a moving community, not a neat row of static balls.\n\nTry tracing a journey: Moon around Earth, Earth around the Sun, Sun within the Milky Way. Each statement uses a different frame of reference, a chosen viewpoint for describing motion. The Sun is the centre of our planet map, but that does not mean it is the centre of everything. It simply gives this local map a clear starting point.\n\n### Keep the map in mind\nPoint to Earth, then move outward: our planet is third, between Venus and Mars. From the Sun's perspective, Mercury is first; from your perspective, every planet is only a tiny object in an enormous space. Both views can be true at once. This solar-system map is a first picture: next, we will explore why a moving planet keeps coming back around the Sun instead of flying off into deep space.",
+      "takeaway": "The solar system is the Sun and the worlds and smaller objects bound to it by gravity.",
+      "next": "Why planets keep moving around the Sun",
+      "summary": "Introduced the Sun as a star, eight planets in order, Earth third, reflected sunlight, moons and smaller bodies. Diagram is not to scale.",
+      "sources": [
+        {
+          "title": "NASA: solar system facts",
+          "url": "https://science.nasa.gov/solar-system/solar-system-facts/"
+        },
+        {
+          "title": "NASA: the planets",
+          "url": "https://science.nasa.gov/solar-system/planets/"
+        }
+      ],
+      "diagram": {
+        "layout": "solar",
+        "caption": "The eight planets in order. Sizes, spacing and alignment are illustrative, not to scale.",
+        "nodes": []
+      },
+      "seconds": 0,
+      "builtin": true,
+      "difficulty": "Medium",
+      "reading_minutes": 5
+    },
+    {
+      "title": "An orbit is a continuous turn",
+      "markdown": "Throw a ball gently and it falls nearby. Throw it harder and it travels farther before landing. In an ideal world without air or obstacles, enough sideways speed would let it keep falling *around* Earth. That is the idea behind an **orbit**.\n\n## Two things happen together\nA planet already has motion through space. Meanwhile, the Sun's gravity pulls it inward. Gravity is the attraction between things that have mass—the amount of matter they contain.\n\nWithout gravity, the planet would continue along a straight path. With gravity, its direction keeps changing. It follows a curved path around the Sun instead. The picture separates these two ideas so you can see how they work together.\n\nThere is no physical track, rail or string holding Earth up. Its orbit is motion shaped by gravity. Actual planetary paths are slightly stretched circles called **ellipses**.\n\nThink of orbiting as a journey that keeps turning. The planet is not parked in space; it is continually moving.\n\n## The sideways throw\nImagine firing a ball horizontally from a very tall mountain. It starts moving sideways, but Earth's gravity pulls it down, so it lands. If you could give it more sideways speed, it would travel farther before hitting the ground. Keep increasing that speed and, in an ideal thought experiment, the ground curves away beneath the ball as fast as the ball falls. It keeps missing the ground. That circling fall is a useful first picture of an orbit.\n\nThe idea can feel odd because on Earth, air slows things down and the ground gets in the way. Space has very little air, so a planet can keep moving for an extremely long time. Gravity changes the direction of that motion. The planet is not being held up by a track or pushed forward by a rocket; it is already moving, and gravity keeps bending its path.\n\n## One pull, two directions\nAt every moment, a planet's motion has a sideways part and an inward pull toward the Sun. If the Sun's gravity disappeared, the planet would continue almost straight ahead. If the planet had no sideways motion, it would fall inward. Together, the sideways motion and inward pull make a curved route around the Sun. The arrows in the picture show those different jobs; they are not literal ropes or forces switched on and off.\n\nNewton described gravity as a force of attraction, and his laws let astronomers calculate how objects move. Einstein later described gravity in a deeper way, as a change in the geometry of space and time. For learning the basic solar-system map, Newton's picture is usually enough: gravity changes direction while a moving planet keeps going. More precise models are useful when timing navigation or studying extreme conditions.\n\n## Why an orbit has a shape\nA perfectly circular path requires just the right combination of speed, direction and distance. Most planetary orbits are slightly oval, a shape called an ellipse. An ellipse can look almost circular. As a planet moves along its path, it is a little closer to the Sun at one part and a little farther away at another. The Sun is off-centre inside the oval rather than exactly in the middle.\n\nEarth's path is close to circular. It makes one trip around the Sun in about a year. Seasons happen mainly because Earth's axis is tilted: during one part of its orbit, your hemisphere leans toward the Sun and receives more direct sunlight and longer days. Earth is slightly closer to the Sun in January than in July. That is a good reminder that “closer means summer” is not the explanation for our seasons.\n\n## A nested set of journeys\nThe Moon goes around Earth, while Earth and the Moon together travel around the Sun. Spacecraft can join these moving systems by matching their speed and direction carefully. A spacecraft placed in orbit is falling around Earth too. Small engine burns change its path; they do not need to push continuously to hold it up.\n\nThe diagram is only a flat, simplified view. Real orbits occupy three-dimensional space and the planets are never frozen at the spots shown. When you picture an orbit, imagine motion continuing while gravity continually turns it. That is how a planet can keep moving and still remain part of the Sun's neighbourhood.",
+      "takeaway": "Sideways motion and gravity together produce an orbit.",
+      "next": "Why the inner and outer planets are so different",
+      "summary": "Explained orbit as motion curved by gravity, continuous falling, mass and elliptical paths. No rails or physical strings.",
+      "sources": [
+        {
+          "title": "NASA Space Place: gravity",
+          "url": "https://spaceplace.nasa.gov/what-is-gravity/en/"
+        },
+        {
+          "title": "NASA: solar system facts",
+          "url": "https://science.nasa.gov/solar-system/solar-system-facts/"
+        },
+        {
+          "title": "NASA: the planets",
+          "url": "https://science.nasa.gov/solar-system/planets/"
+        }
+      ],
+      "diagram": {
+        "layout": "orbit",
+        "caption": "A simplified orbit viewed from above. The blue arrow shows motion; the gold arrow shows the inward pull of gravity. Not to scale.",
+        "nodes": []
+      },
+      "seconds": 0,
+      "builtin": true,
+      "difficulty": "Medium",
+      "reading_minutes": 5
+    }
+  ],
+  "updated_at": "2026-10-08T08:43:09.059088+00:00",
+  "difficulty": "Medium"
+}

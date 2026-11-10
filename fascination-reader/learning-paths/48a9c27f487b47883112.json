@@ -1,0 +1,63 @@
+{
+  "id": "48a9c27f487b47883112",
+  "topic": "ChatGpt Astra",
+  "difficulty": "Medium",
+  "steps": [
+    {
+      "title": "How Astra Gets Things Done: The Feedback Loop",
+      "markdown": "Imagine asking an assistant to organize a messy spreadsheet. Explaining which buttons to press would help, but completing the job requires something more: opening the sheet, inspecting its contents, making changes, and checking the result. Every step reveals information that can change what should happen next.\n\nThat is the foundational idea of this chapter: **an AI assistant can accomplish a task by repeatedly observing, choosing an action, and checking what happened.** This feedback loop connects its reasoning to the world outside the conversation.\n\nHere, “ChatGPT Astra” refers to OpenAI’s GPT‑6 Astra model, which OpenAI describes as supporting computer use, browsing, and professional tasks. Astra is the model; ChatGPT is an application through which people can use AI models. The launch announcement reports capabilities such as working in software and analyzing data. Those are OpenAI’s claims about its product, rather than guarantees that every task will succeed. [OpenAI’s Astra announcement](https://openai.com/index/gpt-6-astra/)\n\nTo understand the loop, first separate three ingredients: the model, its tools, and its instructions. A **model** is a trained computational system that processes information and generates outputs. A **tool** is a software function that lets it retrieve information or perform an operation. Instructions specify the goal and boundaries. OpenAI’s agent guide identifies these as the basic components of an agent—a system that carries out tasks on a user’s behalf. [OpenAI’s practical guide to agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)\n\nThe model brings learned capabilities to the task. During training, language models learn patterns in data by adjusting numerical values called **parameters**. These values influence the outputs they generate. Training can support language use, reasoning, and problem solving, but learned patterns do not provide a live view of the spreadsheet currently open on your computer. That information must enter through the conversation or a tool. [How OpenAI develops its models](https://openai.com/policies/how-chatgpt-and-our-foundation-models-are-developed/)\n\nThink of a capable cook following a recipe in an unfamiliar kitchen. Experience helps the cook interpret “sauté until softened,” but experience alone cannot reveal whether this particular onion has softened. The cook must look, stir, and look again. Similarly, an assistant needs fresh observations to connect a general plan with the actual situation.\n\nThe first part of the loop is **observation**. In computer use, an observation might be a screenshot: an image showing the current application window. It gives the model evidence about visible buttons, text, and results.\n\nThe second part is **action selection**. Given the goal and current observation, the model generates a request for an operation, such as clicking a field or typing text. Software surrounding the model executes that request. Generating an action request and executing it are separate events.\n\nThe third part is **feedback**. After executing the requested actions, the software captures the updated screen and returns it to the model. This provides evidence for the next decision. OpenAI’s computer-use documentation explicitly describes executing actions and returning updated screenshots. The precise implementation can vary; the central principle is that actions are followed by new observations. [OpenAI’s computer-use documentation](https://developers.openai.com/api/docs/guides/tools-computer-use)\n\nHere is a hypothetical example. You ask an assistant with spreadsheet access: “Sort this reading list by author, keep each book’s details together, and leave the header at the top.” This example illustrates the mechanism; it is not a report of an Astra test.\n\nThe assistant first inspects the sheet. It sees columns for title, author, and publication year. Before sorting, it needs to determine which cells belong to the table. A blank row halfway down could matter: selecting only the upper section would leave some books unsorted.\n\nIt selects the full table and opens the sorting controls. The next observation shows options for choosing a column and indicating whether the selection includes a header. The assistant can now choose “Author” and preserve the header. Its decision uses information revealed by the previous action.\n\nAfter sorting, it checks the result. Suppose the author names appear alphabetically ordered, but the titles stayed in their original positions. The visible order looks tidy, yet the table is now wrong: authors have become attached to other people’s books.\n\nA meaningful check therefore examines relationships as well as appearance. Did each title remain paired with its author and year? Did the first row remain a header? Did the sort include every entry? In this scenario, the assistant should undo the faulty operation and adjust its selection before trying again.\n\nThis shows why feedback matters. A plan can be sensible while an individual action fails. Checking gives the system an opportunity to detect that gap. It also shows why a success condition should be concrete: “alphabetical authors with intact book records” is easier to assess than “make the sheet better.”\n\nThe loop has limits. Observations may be incomplete, and a model may interpret them incorrectly. In our example, a screenshot of the first few rows would not establish that every record survived correctly. Feedback creates an opportunity for verification; the strength of that verification depends on what evidence is available and what the assistant checks.\n\nAn agent also needs a stopping condition. OpenAI’s guide describes systems that recognize completion, halt after failures, or return control to the user. [OpenAI’s practical guide to agents](https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/)\n\nFor the reading list, completion would mean that the requested order is established and the book records remain intact. The useful habit is to ask what observation supports that conclusion. Understanding this loop lets you judge an assistant by the connection between its goal, its actions, and its evidence of success.",
+      "takeaway": "Astra can perform tasks through a feedback loop in which tools supply observations, execute actions, and return evidence for checking progress.",
+      "next": "How to define a clear success condition so an AI assistant can verify that a task is complete.",
+      "summary": "Introduced Astra’s task-performing feedback loop: observe, choose an action, execute it through tools, and inspect the result. Distinguished the model, tools, and instructions. A hypothetical spreadsheet sort showed why checking data relationships matters more than a tidy appearance. Feedback supports correction, but incomplete observations and mistaken interpretation limit verification.",
+      "sources": [
+        {
+          "title": "GPT‑6 Astra: A new generation of intelligence",
+          "url": "https://openai.com/index/gpt-6-astra/"
+        },
+        {
+          "title": "A practical guide to building agents",
+          "url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-ai-agents/"
+        },
+        {
+          "title": "How ChatGPT and our foundation models are developed",
+          "url": "https://openai.com/policies/how-chatgpt-and-our-foundation-models-are-developed/"
+        },
+        {
+          "title": "Computer use",
+          "url": "https://developers.openai.com/api/docs/guides/tools-computer-use"
+        }
+      ],
+      "diagram": {
+        "layout": "cycle",
+        "caption": "The assistant repeats these stages while pursuing the user's goal. Arrows show the order of operations, not transformations between inputs. This conceptual simplification omits permission checks and error handling; the cycle ends when completion is verified or work must stop.",
+        "nodes": [
+          {
+            "icon": "light",
+            "label": "Observe",
+            "detail": "Receive the current screen or a tool result."
+          },
+          {
+            "icon": "brain",
+            "label": "Choose",
+            "detail": "Select a next action using the goal and evidence."
+          },
+          {
+            "icon": "code",
+            "label": "Execute",
+            "detail": "Software carries out the permitted tool request."
+          },
+          {
+            "icon": "box",
+            "label": "Check",
+            "detail": "Inspect the outcome and decide whether to continue."
+          }
+        ]
+      },
+      "difficulty": "Medium",
+      "reading_minutes": 5,
+      "seconds": 131.7,
+      "builtin": false
+    }
+  ],
+  "updated_at": "2026-10-13T17:58:21.806082+00:00"
+}
